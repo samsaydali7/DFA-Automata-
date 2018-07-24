@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="583.0" style="-fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FirstSceneController">
+   <children>
+      <Label layoutX="184.0" layoutY="65.0" prefHeight="35.0" prefWidth="226.0" text="Choose An Automata" textAlignment="CENTER" textFill="#e0e0e0">
+         <font>
+            <Font name="Chiller" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="autoList" layoutX="215.0" layoutY="149.0" prefHeight="25.0" prefWidth="164.0" promptText="Choose" style="-fx-background-color: #e0e0e0;" />
+      <Button layoutX="250.0" layoutY="232.0" mnemonicParsing="false" onAction="#SubmitClick" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #e0e0e0;" text="Submit">
+         <font>
+            <Font name="Colonna MT" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="201.0" layoutY="198.0" prefHeight="18.0" prefWidth="209.0" style="-fx-text-alignment: center;" textAlignment="CENTER" textFill="#d30e0e">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,65 @@
+{
+    "alphabit": [
+        "0",
+        "1"
+    ],
+    "states": [
+        {
+            "name":"q0",
+            "finity":false,
+            "category":""
+        },
+        {
+            "name":"q1",
+            "finity":false,
+            "category":""
+        },
+        {
+            "name":"q2",
+            "finity":true,
+            "category":"Strarts 10 "
+        },
+        {
+            "name":"q3",
+            "finity":false,
+            "category":""
+        },
+        {
+            "name":"q4",
+            "finity":false,
+            "category":""
+        },
+        {
+            "name":"q5",
+            "finity":true,
+            "category":"Ends 01"
+        }
+    ],
+    "startingNode": "q0",
+    "transitions": {
+        "q0": {
+            "0": "q4",
+            "1": "q1"
+        },
+        "q1": {
+            "0": "q2",
+            "1": "q3"
+        },
+        "q2": {
+            "0": "q2",
+            "1": "q2"
+        },
+        "q3": {
+            "0": "q4",
+            "1": "q3"
+        },
+        "q4": {
+            "0": "q4",
+            "1": "q5"
+        },
+        "q5": {
+            "0": "q4",
+            "1": "q3"
+        }
+    }
+}
