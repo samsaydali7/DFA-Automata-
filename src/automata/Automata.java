@@ -50,7 +50,7 @@ public class Automata implements Serializable {
         return alphabet;
     }
 
-    public Node nextState(Node state, String symbol) { //تابع الانتقال
+    public Node nextState(Node state, String symbol) { 
         if (states.contains(state) && alphabet.contains(symbol)) {
 
             return this.transitions.get(state).getNode(symbol);
